@@ -28,6 +28,9 @@
             <a th:text="${ctm.name}" th:href="@{customer/{id}/(id=${ctm.id})}"></a>
         </td>
         <td>
+            <img th:src="@{'/image/'+${ctm.avatar}}" width="100px" height="100px">
+        </td>
+        <td>
             <a th:href="@{customer/update/{id}/(id=${ctm.id})}">
                 <button>Edit</button>
             </a>
